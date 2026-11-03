@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Addis Ababa Travel Guide"
+description = "A single-page tourist guide to Addis Ababa, Ethiopia, with practical trip advice, cultural context, landmarks, and local food."
+version = "1.0.0"
+id = "artifacts/addis-ababa-guide"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24300
+
+[services.development]
+run = "pnpm --filter @workspace/addis-ababa-guide run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/addis-ababa-guide", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/addis-ababa-guide/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24300"
+BASE_PATH = "/"

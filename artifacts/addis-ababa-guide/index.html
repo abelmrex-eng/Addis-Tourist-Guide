@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Addis Ababa — A first-time visitor’s guide</title>
+    <meta name="description" content="A warm, practical first-timer’s guide to Addis Ababa: its landmarks, Ethiopian food and coffee, culture, and the little things to know before you go." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Welcome to Addis Ababa — A first-time visitor’s guide" />
+    <meta property="og:description" content="Find your way into Addis: six memorable landmarks, a table full of Ethiopian flavors, and thoughtful tips for your first visit." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Welcome to Addis Ababa — A first-time visitor’s guide" />
+    <meta name="twitter:description" content="Landmarks, food, coffee, culture, and useful tips for your first visit to Ethiopia’s capital." />
+    <meta name="theme-color" content="#f7f3e8" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7f3e8'/%3E%3Cpath d='M12 16h40' stroke='%23078930' stroke-width='9'/%3E%3Cpath d='M12 32h40' stroke='%23fcdd09' stroke-width='9'/%3E%3Cpath d='M12 48h40' stroke='%23da121a' stroke-width='9'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Ethiopic:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --cream: #f7f3e8;
+        --paper: #fffdf7;
+        --ink: #27352b;
+        --muted: #697267;
+        --green: #078930;
+        --yellow: #fcdd09;
+        --red: #da121a;
+        --brown: #76523d;
+        --line: #e4dfd0;
+        --serif: "DM Serif Display", Georgia, serif;
+        --sans: "DM Sans", sans-serif;
+        --ethiopic: "Noto Sans Ethiopic", sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+      body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+      a { color: inherit; }
+      button { font: inherit; }
+      .skip-link { position: fixed; z-index: 20; left: 1rem; top: 1rem; padding: .8rem 1rem; background: var(--ink); color: var(--paper); transform: translateY(-160%); }
+      .skip-link:focus { transform: translateY(0); }
+      .topline { height: 5px; background: linear-gradient(90deg, var(--green) 0 33.33%, var(--yellow) 33.33% 66.66%, var(--red) 66.66%); }
+      .site-nav { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(39,53,43,.12); background: rgba(247,243,232,.93); backdrop-filter: blur(14px); }
+      .nav-inner { max-width: 1220px; height: 68px; margin: auto; padding: 0 34px; display: flex; align-items: center; justify-content: space-between; }
+      .brand { text-decoration: none; font-weight: 700; letter-spacing: -.045em; font-size: 1.08rem; }
+      .brand span { color: var(--green); }
+      .nav-links { display: flex; align-items: center; gap: 32px; }
+      .nav-links a { text-decoration: none; font-size: .82rem; color: #586257; font-weight: 600; transition: color .2s ease; }
+      .nav-links a:hover, .nav-links a:focus-visible { color: var(--green); }
+      .nav-toggle { display: none; border: 1px solid var(--line); background: var(--paper); width: 42px; height: 42px; border-radius: 50%; color: var(--ink); cursor: pointer; }
+      .hero { position: relative; overflow: hidden; min-height: 660px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+      .hero:before { content: ""; position: absolute; width: 580px; height: 580px; border-radius: 50%; border: 1px solid rgba(7,137,48,.13); right: -100px; top: -165px; box-shadow: 0 0 0 40px rgba(7,137,48,.025), 0 0 0 80px rgba(7,137,48,.02); }
+      .hero-grid { width: min(1220px, 100%); margin: auto; padding: 88px 34px 78px; display: grid; grid-template-columns: 1.02fr .98fr; gap: 44px; align-items: center; }
+      .eyebrow { margin: 0 0 20px; text-transform: uppercase; letter-spacing: .19em; font-weight: 700; font-size: .7rem; color: var(--green); }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 { max-width: 660px; margin-bottom: 14px; font: 400 clamp(3.7rem, 7.3vw, 6.8rem)/.98 var(--serif); letter-spacing: -.055em; }
+      .hero-amharic { font: 500 clamp(1.45rem, 2vw, 1.9rem)/1.35 var(--ethiopic); color: var(--brown); margin: 0 0 20px; }
+      .hero-intro { max-width: 520px; margin: 0; color: #59645a; font-size: 1.08rem; line-height: 1.8; }
+      .hero-intro strong { color: var(--ink); font-weight: 700; }
+      .hero-actions { margin-top: 33px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+      .button-primary { display: inline-flex; align-items: center; gap: 13px; padding: 15px 21px; color: var(--paper); background: var(--green); border-radius: 3px; font-size: .88rem; font-weight: 700; text-decoration: none; box-shadow: 0 8px 18px rgba(7,137,48,.15); transition: transform .2s ease, background .2s ease; }
+      .button-primary:hover { background: #066f28; transform: translateY(-2px); }
+      .button-primary svg { width: 16px; height: 16px; }
+      .hero-note { color: #73796e; font-size: .77rem; letter-spacing: .025em; }
+      .hero-art { position: relative; min-height: 405px; display: flex; align-items: center; justify-content: center; }
+      .art-frame { width: min(100%, 510px); height: 390px; position: relative; border-radius: 48% 48% 5px 5px; overflow: hidden; background: #e8e3ce; box-shadow: 0 28px 60px rgba(63,69,48,.12); }
+      .art-frame svg { display: block; width: 100%; height: 100%; }
+      .art-label { position: absolute; bottom: 23px; left: 24px; color: white; font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; text-shadow: 0 2px 10px #27352b; }
+      .seal { position: absolute; display: grid; place-items: center; text-align: center; right: 0; top: 27px; width: 113px; height: 113px; border-radius: 50%; background: var(--yellow); color: var(--ink); transform: rotate(9deg); box-shadow: 0 10px 24px rgba(39,53,43,.12); }
+      .seal small { display: block; text-transform: uppercase; font-size: .53rem; font-weight: 700; letter-spacing: .14em; }
+      .seal strong { display: block; font: 400 1.5rem/.95 var(--serif); }
+      .section { padding: 106px 34px; }
+      .section-inner { width: min(1152px, 100%); margin: auto; }
+      .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 36px; margin-bottom: 42px; }
+      .section-heading h2 { margin: 0; font: 400 clamp(2.8rem, 5.4vw, 4.45rem)/1.02 var(--serif); letter-spacing: -.045em; }
+      .section-heading p { max-width: 405px; margin: 0 0 4px; color: var(--muted); font-size: .96rem; line-height: 1.75; }
+      .section-index { display: block; color: var(--brown); font-size: .7rem; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; margin-bottom: 14px; }
+      .landmarks { background: var(--paper); }
+      .landmark-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+      .place-card { --card-accent: var(--green); position: relative; overflow: hidden; min-height: 248px; padding: 25px 25px 24px; background: #fffefa; border: 1px solid #e9e5d9; border-top: 4px solid var(--card-accent); border-radius: 4px; transition: transform .25s ease, box-shadow .25s ease; }
+      .place-card:hover { transform: translateY(-5px); box-shadow: 0 18px 32px rgba(39,53,43,.09); }
+      .place-card:nth-child(3n+2) { --card-accent: var(--yellow); }
+      .place-card:nth-child(3n) { --card-accent: var(--red); }
+      .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; }
+      .card-icon { width: 39px; height: 39px; color: var(--brown); }
+      .card-icon svg { width: 100%; height: 100%; stroke: currentColor; fill: none; stroke-width: 1.45; stroke-linecap: round; stroke-linejoin: round; }
+      .card-number { font: italic 1.25rem var(--serif); color: #b0aa99; }
+      .place-card h3 { margin: 0 0 9px; font: 400 1.43rem/1.2 var(--serif); }
+      .place-card p { margin: 0; max-width: 34ch; color: var(--muted); font-size: .87rem; line-height: 1.65; }
+      .note-band { margin-top: 23px; padding: 22px 25px; display: flex; align-items: center; gap: 19px; background: #edf2e7; border-left: 4px solid var(--green); }
+      .note-band strong { flex: 0 0 auto; font: 400 1.18rem var(--serif); }
+      .note-band p { color: #59645a; margin: 0; font-size: .86rem; line-height: 1.6; }
+      .food-section { background: #f1eddf; }
+      .food-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 58px; align-items: start; }
+      .food-intro { position: sticky; top: 106px; }
+      .food-intro h2 { font: 400 clamp(2.8rem, 5vw, 4.25rem)/1.02 var(--serif); letter-spacing: -.045em; margin: 0 0 20px; }
+      .food-intro p { max-width: 390px; color: var(--muted); font-size: .97rem; line-height: 1.8; }
+      .food-mark { margin-top: 36px; display: flex; align-items: center; gap: 12px; color: var(--brown); font-size: .78rem; font-weight: 700; }
+      .food-mark span { width: 43px; height: 1px; background: var(--red); }
+      .food-list { border-top: 1px solid #dcd5c4; }
+      .food-row { display: grid; grid-template-columns: 54px 1fr; gap: 18px; padding: 24px 0; border-bottom: 1px solid #dcd5c4; }
+      .food-symbol { width: 46px; height: 46px; border: 1px solid #c8c0ad; color: var(--green); display: grid; place-items: center; border-radius: 50%; }
+      .food-symbol svg { width: 23px; height: 23px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+      .food-row h3 { margin: 0 0 6px; font: 400 1.32rem var(--serif); }
+      .food-row p { margin: 0; color: #687065; font-size: .86rem; line-height: 1.65; }
+      .culture { background: var(--paper); }
+      .culture-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+      .culture-card { min-height: 220px; padding: 29px; border-radius: 4px; background: #f5f1e6; border: 1px solid #e9e2d3; display: flex; flex-direction: column; justify-content: space-between; transition: transform .25s ease, box-shadow .25s ease; }
+      .culture-card:hover { transform: translateY(-4px); box-shadow: 0 16px 30px rgba(39,53,43,.08); }
+      .culture-card:nth-child(2) { background: #edf2e7; }
+      .culture-card:nth-child(3) { background: #f7ece6; }
+      .culture-card:nth-child(4) { background: #f8f1ce; }
+      .culture-card h3 { font: 400 1.55rem var(--serif); margin: 0 0 9px; }
+      .culture-card p { margin: 0; color: #646d61; line-height: 1.7; font-size: .88rem; max-width: 45ch; }
+      .culture-kicker { margin: 0 0 22px; font-size: .67rem; letter-spacing: .14em; font-weight: 700; color: var(--brown); text-transform: uppercase; }
+      .fact-strip { background: var(--ink); color: #f7f3e8; padding: 63px 34px; }
+      .fact-inner { width: min(1152px, 100%); margin: auto; display: grid; grid-template-columns: 1.15fr repeat(4, 1fr); gap: 24px; align-items: center; }
+      .fact-lead { font: 400 2rem/1.1 var(--serif); }
+      .fact { border-left: 1px solid rgba(247,243,232,.25); padding-left: 19px; }
+      .fact span { display: block; color: #c4c6ae; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 9px; }
+      .fact strong { font: 400 1.28rem var(--serif); }
+      .tips { background: #f1eddf; }
+      .tips-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 75px; }
+      .tips-aside { padding-top: 6px; }
+      .tips-aside h2 { margin: 0 0 17px; font: 400 clamp(2.8rem, 5vw, 4rem)/1.04 var(--serif); letter-spacing: -.045em; }
+      .tips-aside p { color: var(--muted); line-height: 1.8; max-width: 370px; }
+      .tip-list { list-style: none; padding: 0; margin: 0; counter-reset: tips; }
+      .tip-list li { counter-increment: tips; display: grid; grid-template-columns: 43px 1fr; gap: 17px; padding: 19px 0; border-bottom: 1px solid #dcd5c4; color: #5e685d; font-size: .9rem; line-height: 1.65; }
+      .tip-list li:first-child { border-top: 1px solid #dcd5c4; }
+      .tip-list li:before { content: counter(tips, decimal-leading-zero); color: var(--green); font: italic 1.15rem var(--serif); }
+      .tip-list strong { color: var(--ink); }
+      .phrase { display: inline-block; margin: 3px 3px 0 0; padding: 2px 7px; color: var(--brown); background: #fff9e9; font-weight: 700; border-radius: 2px; }
+      footer { padding: 30px 34px; background: var(--ink); color: #f7f3e8; }
+      .footer-inner { width: min(1152px, 100%); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+      footer p { margin: 0; font-size: .8rem; color: #e0dfd2; }
+      .footer-mark { display: flex; gap: 5px; }
+      .footer-mark i { display: block; width: 18px; height: 4px; }
+      .footer-mark i:nth-child(1) { background: var(--green); }
+      .footer-mark i:nth-child(2) { background: var(--yellow); }
+      .footer-mark i:nth-child(3) { background: var(--red); }
+      :focus-visible { outline: 3px solid #b88435; outline-offset: 4px; }
+      @media (max-width: 820px) {
+        .hero { min-height: auto; }
+        .hero-grid { grid-template-columns: 1fr; gap: 28px; padding-top: 72px; }
+        .hero-art { min-height: 340px; }
+        .art-frame { height: 330px; max-width: 480px; }
+        .landmark-grid { grid-template-columns: repeat(2, 1fr); }
+        .food-layout, .tips-layout { grid-template-columns: 1fr; gap: 30px; }
+        .food-intro { position: static; }
+        .fact-inner { grid-template-columns: repeat(4, 1fr); }
+        .fact-lead { grid-column: 1/-1; }
+        .fact:nth-child(2) { border-left: 0; padding-left: 0; }
+      }
+      @media (max-width: 620px) {
+        html { scroll-padding-top: 70px; }
+        .nav-inner { height: 62px; padding: 0 20px; }
+        .nav-toggle { display: grid; place-items: center; }
+        .nav-links { display: none; position: absolute; top: 61px; right: 12px; left: 12px; padding: 11px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 14px 30px rgba(39,53,43,.12); flex-direction: column; align-items: stretch; gap: 0; }
+        .nav-links.open { display: flex; }
+        .nav-links a { padding: 13px 12px; border-bottom: 1px solid #eee9dc; }
+        .nav-links a:last-child { border: 0; }
+        .hero-grid { padding: 61px 22px 53px; }
+        h1 { font-size: clamp(3.4rem, 16vw, 5.2rem); }
+        .hero-intro { font-size: 1rem; }
+        .hero-art { min-height: 295px; }
+        .art-frame { height: 285px; }
+        .seal { width: 89px; height: 89px; right: -2px; top: 10px; }
+        .seal strong { font-size: 1.2rem; }
+        .section { padding: 76px 22px; }
+        .section-heading { display: block; margin-bottom: 30px; }
+        .section-heading p { margin-top: 17px; }
+        .landmark-grid, .culture-grid { grid-template-columns: 1fr; }
+        .place-card { min-height: 220px; }
+        .note-band { align-items: flex-start; flex-direction: column; gap: 9px; }
+        .food-row { grid-template-columns: 43px 1fr; gap: 13px; }
+        .food-symbol { width: 40px; height: 40px; }
+        .culture-card { min-height: 195px; }
+        .fact-strip { padding: 48px 22px; }
+        .fact-inner { grid-template-columns: 1fr 1fr; gap: 25px 16px; }
+        .fact-lead { font-size: 1.8rem; }
+        .fact { padding-left: 13px; }
+        .fact:nth-child(2), .fact:nth-child(4) { border-left: 0; padding-left: 0; }
+        .tips-layout { gap: 22px; }
+        footer { padding: 26px 22px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="topline" aria-hidden="true"></div>
+    <header>
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a class="brand" href="#home" aria-label="Addis Ababa guide home">ADDIS<span>.</span></a>
+          <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+            <svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a href="#landmarks">Landmarks</a>
+            <a href="#food">Food &amp; Coffee</a>
+            <a href="#culture">Culture</a>
+            <a href="#tips">Tips</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">A first-timer’s field guide · Ethiopia</p>
+            <h1 id="hero-title">Welcome to<br />Addis Ababa</h1>
+            <p class="hero-amharic" lang="am">አዲስ አበባ</p>
+            <p class="hero-intro">A city of highland air, generous tables, and stories around every corner. <strong>Addis Ababa means “new flower”</strong>—a fitting name for a capital that keeps unfolding.</p>
+            <div class="hero-actions">
+              <a class="button-primary" href="#landmarks">Start exploring
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15m-6-6 6 6 6-6"/></svg>
+              </a>
+              <span class="hero-note">Come curious. Take your time.</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Illustration of Addis Ababa beneath the highland sky">
+            <div class="art-frame">
+              <svg viewBox="0 0 600 470" role="img" aria-labelledby="city-title" preserveAspectRatio="xMidYMid slice">
+                <title id="city-title">A layered illustration of Addis Ababa with the Entoto hills and city rooftops</title>
+                <rect width="600" height="470" fill="#d7e0ca"/>
+                <circle cx="456" cy="94" r="54" fill="#fcdd09"/>
+                <path d="M0 242 Q82 197 170 225 T344 207 T600 215 V470 H0Z" fill="#a6b898"/>
+                <path d="M0 281 Q122 235 220 270 T410 250 T600 259 V470 H0Z" fill="#789273"/>
+                <path d="M0 323 Q105 284 207 310 T396 298 T600 304 V470 H0Z" fill="#526f59"/>
+                <path d="M0 386 Q112 355 216 375 T416 363 T600 371 V470 H0Z" fill="#385a47"/>
+                <g fill="#eee8d4">
+                  <path d="M38 307h59v70H38z"/><path d="M47 286h40v21H47z"/><path d="M116 293h46v69h-46z"/><path d="M122 275h34v18h-34z"/>
+                  <path d="M194 318h67v76h-67z"/><path d="M206 297h43v21h-43z"/><path d="M296 282h56v76h-56z"/><path d="M304 260h40v22h-40z"/>
+                  <path d="M382 300h55v70h-55z"/><path d="M391 280h37v20h-37z"/><path d="M465 277h76v89h-76z"/><path d="M474 255h58v22h-58z"/>
+                </g>
+                <g fill="#b76c4c">
+                  <path d="M76 307h21v70H76z"/><path d="M116 293h18v69h-18z"/><path d="M226 318h35v76h-35z"/><path d="M333 282h19v76h-19z"/><path d="M410 300h27v70h-27z"/><path d="M501 277h40v89h-40z"/>
+                </g>
+                <g fill="#364f3e">
+                  <path d="M17 362h7v-32h-7zm-9 10 12-24 12 24z"/><path d="M546 365h8v-43h-8zm-11 12 15-29 15 29z"/>
+                  <path d="M269 371h8v-43h-8zm-11 12 15-29 15 29z"/><path d="M442 377h8v-40h-8zm-10 11 14-27 14 27z"/>
+                </g>
+                <path d="M0 408q95-28 188 0t198-3 214 1v64H0z" fill="#d1b47a"/>
+                <path d="M0 432q115-24 230 2t190-1 180 5v32H0z" fill="#b98459"/>
+                <g fill="#fcdd09" opacity=".8"><circle cx="82" cy="351" r="3"/><circle cx="149" cy="328" r="3"/><circle cx="315" cy="314" r="3"/><circle cx="399" cy="330" r="3"/><circle cx="486" cy="300" r="3"/></g>
+              </svg>
+              <span class="art-label">The highlands, in the heart of it all</span>
+            </div>
+            <div class="seal" aria-hidden="true"><div><small>Elevation</small><strong>2,400<br />m</strong></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section landmarks" id="landmarks" aria-labelledby="landmarks-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div><span class="section-index">01 / Find your bearings</span><h2 id="landmarks-title">A city of layers.</h2></div>
+            <p>Start with the places that open a window into Addis—from ancient human history to the lively pulse of daily life.</p>
+          </div>
+          <div class="landmark-grid">
+            <article class="place-card">
+              <div class="card-top"><span class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 32h26M10 32V17h20v15M15 17v-5h10v5M13 22h4m6 0h4M17 32v-7h6v7M9 17l11-8 11 8"/></svg></span><span class="card-number">01</span></div>
+              <h3>National Museum of Ethiopia</h3><p>Meet Lucy, known in Ethiopia as Dinknesh, and trace humanity’s story at one of the country’s most important museums.</p>
+            </article>
+            <article class="place-card">
+              <div class="card-top"><span class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 33h26M10 33V18h20v15M16 18V9h8v9M20 4v5M13 22h2m10 0h2M18 33v-8h4v8M8 18l12-7 12 7"/></svg></span><span class="card-number">02</span></div>
+              <h3>Holy Trinity Cathedral</h3><p>A striking place of worship and remembrance; the cathedral is the final resting place of Haile Selassie.</p>
+            </article>
+            <article class="place-card">
+              <div class="card-top"><span class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="m4 31 10-14 5 7 6-12 11 19H4Z"/><path d="m20 19 5 4 3-4M9 33h23"/></svg></span><span class="card-number">03</span></div>
+              <h3>Mount Entoto</h3><p>Head uphill for fresh air, sweeping city views, and historic churches among the eucalyptus.</p>
+            </article>
+            <article class="place-card">
+              <div class="card-top"><span class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 16h30v17H5zM8 16l3-7h18l3 7M12 21v7m8-7v7m8-7v7M4 33h32M15 9V5h10v4"/></svg></span><span class="card-number">04</span></div>
+              <h3>Merkato</h3><p>Follow the sounds and colors through one of Africa’s largest open-air markets. Go with time, curiosity, and a sense of direction.</p>
+            </article>
+            <article class="place-card">
+              <div class="card-top"><span class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 33h26M10 33V16h20v17M14 16V9h12v7M17 20h6v13h-6zM8 16l12-8 12 8"/></svg></span><span class="card-number">05</span></div>
+              <h3>Ethnological Museum</h3><p>Explore Ethiopia’s diverse cultures inside the former palace grounds at Addis Ababa University.</p>
+            </article>
+            <article class="place-card">
+              <div class="card-top"><span class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 32h28M9 32V17h22v15M14 17v-6h12v6M20 5v6m-5 8v4m10-4v4M17 32v-7h6v7M7 17l13-8 13 8"/></svg></span><span class="card-number">06</span></div>
+              <h3>Unity Park</h3><p>A welcoming introduction to Ethiopia’s heritage in the grounds of the Grand Palace, with history, gardens, and more.</p>
+            </article>
+          </div>
+          <aside class="note-band"><strong>A gentle first-day plan</strong><p>Keep your first outing close by and unhurried. The altitude is real; the city will still be here tomorrow.</p></aside>
+        </div>
+      </section>
+
+      <section class="section food-section" id="food" aria-labelledby="food-title">
+        <div class="section-inner food-layout">
+          <div class="food-intro">
+            <span class="section-index">02 / Pull up a chair</span>
+            <h2 id="food-title">Good things<br />are shared.</h2>
+            <p>Meals here are an invitation to slow down. Tear off a piece of injera, reach for a favorite, and let someone show you how it’s done.</p>
+            <div class="food-mark"><span aria-hidden="true"></span> FOOD &amp; COFFEE</div>
+          </div>
+          <div class="food-list">
+            <article class="food-row">
+              <span class="food-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11c0-4 3-7 8-7s8 3 8 7-3 8-8 8-8-4-8-8Z"/><path d="M5 11h14M8 8c1 1 1 2 0 3m4-5c1 1 1 3 0 5m4-3c1 1 1 2 0 3M8 15c2 1 6 1 8 0"/></svg></span>
+              <div><h3>Injera &amp; wot</h3><p>Spongy, tangy injera is both plate and utensil. Try richly spiced doro wot, or shiro—a comforting chickpea stew.</p></div>
+            </article>
+            <article class="food-row">
+              <span class="food-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14l-1 9H6l-1-9Zm3 0 1-5h6l1 5M8 14h8M9 17h6"/></svg></span>
+              <div><h3>Kitfo &amp; tibs</h3><p>For a different kind of feast, look for kitfo, finely minced and seasoned, or tibs, sizzling pieces of sautéed meat.</p></div>
+            </article>
+            <article class="food-row">
+              <span class="food-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14l-1 10H6L5 10Zm-1 0h16M8 7c-1-2 1-2 0-4m4 4c-1-2 1-2 0-4m4 4c-1-2 1-2 0-4"/></svg></span>
+              <div><h3>Coffee, from its home</h3><p>Ethiopia is coffee’s birthplace. A coffee ceremony is more than a drink: stay for the roasting, the scent, and the conversation.</p></div>
+            </article>
+            <article class="food-row">
+              <span class="food-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8h14M7 8l5-5 5 5M6 13l6 8 6-8"/></svg></span>
+              <div><h3>Fasting food &amp; beyaynetu</h3><p>On Wednesdays and Fridays, many observe fasting with plant-based meals. A beyaynetu brings a colorful variety of dishes together on injera.</p></div>
+            </article>
+            <article class="food-row">
+              <span class="food-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Zm-2 0h16M9 5h6M10 3h4"/></svg></span>
+              <div><h3>Tej &amp; gursha</h3><p>Sample tej, Ethiopia’s honey wine. And if someone offers you a gursha—a bite placed by hand—it’s a warm gesture of care.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section culture" id="culture" aria-labelledby="culture-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div><span class="section-index">03 / A different rhythm</span><h2 id="culture-title">Time, sound &amp; celebration.</h2></div>
+            <p>Some of the best travel moments come when you let local rhythms set the pace. Here are a few to listen for.</p>
+          </div>
+          <div class="culture-grid">
+            <article class="culture-card"><div><p class="culture-kicker">A calendar of its own</p><h3>Thirteen months</h3><p>Ethiopia’s calendar has 13 months. Ethiopian time is counted from sunrise, so it may not match the clock you’re used to—double-check plans together.</p></div></article>
+            <article class="culture-card"><div><p class="culture-kicker">Listen closely</p><h3>Eskista &amp; Ethio-jazz</h3><p>Watch for the expressive shoulder movements of eskista, and make room in your playlist for the unmistakable sound of Ethio-jazz.</p></div></article>
+            <article class="culture-card"><div><p class="culture-kicker">September</p><h3>Meskel</h3><p>Meskel, the Finding of the True Cross, fills September with ceremony and community celebrations around the great bonfire.</p></div></article>
+            <article class="culture-card"><div><p class="culture-kicker">January</p><h3>Timkat</h3><p>Timkat marks Epiphany with vibrant processions and water blessings. Check local dates and be a respectful observer.</p></div></article>
+            <article class="culture-card"><div><p class="culture-kicker">A global crossroads</p><h3>African Union</h3><p>Addis Ababa is home to the African Union headquarters—a diplomatic city with a place in continent-wide conversations.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="fact-strip" aria-label="Addis Ababa quick facts">
+        <div class="fact-inner">
+          <div class="fact-lead">A few things<br />to know.</div>
+          <div class="fact"><span>Country</span><strong>Ethiopia</strong></div>
+          <div class="fact"><span>Language</span><strong>Amharic</strong></div>
+          <div class="fact"><span>Currency</span><strong>Birr</strong></div>
+          <div class="fact"><span>Elevation</span><strong>~2,400 m</strong></div>
+        </div>
+      </section>
+
+      <section class="section tips" id="tips" aria-labelledby="tips-title">
+        <div class="section-inner tips-layout">
+          <div class="tips-aside">
+            <span class="section-index">04 / Before you set out</span>
+            <h2 id="tips-title">A little know-how goes a long way.</h2>
+            <p>Bring an open mind, leave space in the day, and use these notes to make your first visit feel easier.</p>
+          </div>
+          <ol class="tip-list">
+            <li><span><strong>Acclimatize on day one.</strong> Addis sits around 2,400 metres above sea level. Take it easy, drink water, and give yourself time to adjust.</span></li>
+            <li><span><strong>Plan for October–February.</strong> These months are generally a lovely time to explore; pack layers for cooler highland evenings.</span></li>
+            <li><span><strong>Choose your ride.</strong> Ride-hailing, taxis, and the light rail are all options. Allow extra time for traffic and confirm a taxi fare before setting off.</span></li>
+            <li><span><strong>Dress modestly at churches.</strong> Cover shoulders and knees, follow posted guidance, and remove shoes where requested.</span></li>
+            <li><span><strong>Ask before photographing people.</strong> A simple request makes for a more respectful encounter; accept a no graciously.</span></li>
+            <li><span><strong>Learn two small words.</strong> <span class="phrase" lang="am">Selam</span> (hello) and <span class="phrase" lang="am">Ameseginalehu</span> (thank you) are a good place to begin.</span></li>
+            <li><span><strong>Carry some cash.</strong> Birr is useful for smaller purchases and places that may not accept cards. Keep it secure and exchange through trusted sources.</span></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <p>Made with Replit for my Day 1 assignment</p>
+        <span class="footer-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const links = document.querySelector(".nav-links");
+      toggle.addEventListener("click", () => {
+        const isOpen = links.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      });
+      links.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          links.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation");
+        }
+      });
+    </script>
+  </body>
+</html>
