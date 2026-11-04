@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "bsgLuFMoqr8AZmGLbNUFf"
+uri = "file://generated-artifacts/addis-ababa-guide.zip"
+type = "unspecified"
+title = "Addis Ababa Travel Guide project ZIP"
+description = "The full guide artifact source, including the standalone page and project files. Build output and dependencies are excluded."
+logical_id = "86a78169-47b3-437d-acc4-ed6acf47a336"
+content_hash = "sha256:765c61f3cb03e8daa9eb9c128b1cec42e5852de0674cd0959bee9b04b9b4d2c4"
+size = 84806
+mtime_ms = 1793755286274
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:e9bcc087-ac7f-45dc-94d7-408846b74249/86a78169-47b3-437d-acc4-ed6acf47a336/6f49dc48-4417-49cc-969f-b9e547d75572"
+storage_version_token = "1793755291586771"
+content_type = "application/octet-stream"
