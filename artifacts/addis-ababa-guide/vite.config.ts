@@ -38,7 +38,7 @@ export default defineConfig({
       ? [
           await import('@replit/vite-plugin-cartographer').then((m) =>
             m.cartographer({
-              root: path.resolve(import.meta.dirname, '..'),
+              root: path.resolve(import.meta.dirname, '../..'),
             }),
           ),
           await import('@replit/vite-plugin-dev-banner').then((m) =>
@@ -59,7 +59,8 @@ export default defineConfig({
     },
     dedupe: ['react', 'react-dom'],
   },
-  root: path.resolve(import.meta.dirname),
+  root: path.resolve(import.meta.dirname, '../..'),
+  publicDir: path.resolve(import.meta.dirname, 'public'),
   build: {
     outDir: path.resolve(import.meta.dirname, 'dist/public'),
     emptyOutDir: true,

@@ -20,8 +20,7 @@ BASE_PATH=/ PORT=24300 pnpm --filter @workspace/addis-ababa-guide run build
 
 The production files are written to `artifacts/addis-ababa-guide/dist/public/`.
 
-## Main files
+## Project files
 
 - `index.html` — the guide page, including its styles and page behavior.
-- `package.json` — development and build commands.
-- `vite.config.ts` — Vite configuration for the workspace artifact.
+- `artifacts/addis-ababa-guide/` — the Vite package and Replit artifact configuration used to run and publish the root-level page.
