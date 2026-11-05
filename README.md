@@ -2,6 +2,8 @@
 
 A responsive, single-page guide for visitors to Addis Ababa. It covers city landmarks, Ethiopian food and coffee, local culture, useful travel facts, and practical tips.
 
+![Addis Ababa skyline at sunset](./addis-ababa-from-above.webp)
+
 ## Run locally
 
 From the workspace root:
